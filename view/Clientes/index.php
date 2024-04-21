@@ -23,10 +23,10 @@ if (isset($_SESSION["idUsuario"])) {
                     <div class="tbl">
                         <div class="tbl-row">
                             <div class="tbl-cell">
-                                <h3>Mantenimiento Transaccion</h3>
+                                <h3>Mantenimiento Clientes</h3>
                                 <ol class="breadcrumb breadcrumb-simple">
                                     <li><a href="../Home/">Home</a></li>
-                                    <li class="active">Mantenimiento Transaccion</li>
+                                    <li class="active">Mantenimiento Clientes</li>
                                 </ol>
                             </div>
                         </div>
@@ -42,11 +42,12 @@ if (isset($_SESSION["idUsuario"])) {
                             <!---------------------------------------------------------------------------------------------------------------------------------------->
                             <tr>
                                 <th style="text-transform: capitalize;">#</th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> ID Motivo Transaccion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> ID Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> ID Cliente </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha Transaccion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Monto Transaccion </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> ID del tipo de cliente </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> Codigo del cliente </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Numero de identidad </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Nombre Cliente </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Registro </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Modificacion </th>
                                 <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Usuario Que Lo Registro </th>
                                 <th style="text-transform: capitalize;"><i class="bi bi-pencil-fill"></i> Editar</th>
                             </tr>
@@ -54,11 +55,12 @@ if (isset($_SESSION["idUsuario"])) {
                         <tfoot>
                             <tr>
                                 <th style="text-transform: capitalize;">#</th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> ID Motivo Transaccion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> ID Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> ID Cliente </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha Transaccion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Monto Transaccion </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> ID del tipo de cliente </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> Codigo del cliente </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Numero de identidad </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Nombre Cliente </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Registro </th>
+                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Modificacion </th>
                                 <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Usuario Que Lo Registro </th>
                                 <th style="text-transform: capitalize;"><i class="bi bi-pencil-fill"></i> Editar</th>
                             </tr>

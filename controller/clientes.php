@@ -2,7 +2,7 @@
 /* Requerir la cadena de conexion */
 require_once("../config/conexion.php");
 /* Requerir el model */
-require_once("../model/Transacciones.php");
+require_once("../model/Clientes.php");
 //Modifique el link a la ubicacion del model usuariosSure XXX
 
 /* Declara la clase */
@@ -17,33 +17,7 @@ switch ($_GET["op"]) {
         if (is_array($datos) == true and count($datos) > 0) {
             $html = "<option value='0'>Escoger...</option>";
             foreach ($datos as $row) {
-                $html .= "<option value='" . $row['idMotivoTransaccion'] . "'>" . $row['idMotivoTransaccion'] . "</option>";
-            }
-
-            //retorna el htm;
-            echo $html;
-        }
-        break;
-
-    case "comouno":
-        $datos = $general->get_combo_infouno();
-        if (is_array($datos) == true and count($datos) > 0) {
-            $html = "<option value='0'>Escoger...</option>";
-            foreach ($datos as $row) {
-                $html .= "<option value='" . $row['idAgencia'] . "'>" . $row['idAgencia'] . "</option>";
-            }
-
-            //retorna el htm;
-            echo $html;
-        }
-        break;
-
-    case "combo2":
-        $datos = $general->get_combo_info2();
-        if (is_array($datos) == true and count($datos) > 0) {
-            $html = "<option value='0'>Escoger...</option>";
-            foreach ($datos as $row) {
-                $html .= "<option value='" . $row['idCliente'] . "'>" . $row['idCliente'] . "</option>";
+                $html .= "<option value='" . $row['idTipoCliente'] . "'>" . $row['idTipoCliente'] . "</option>";
             }
 
             //retorna el htm;
@@ -64,18 +38,19 @@ switch ($_GET["op"]) {
         /* Recorrer los datos  */
         foreach ($datos as $row) {
             $sub_array = array();
-            $sub_array[] = $row["idTransaccion"];
-            $sub_array[] = $row["idMotivoTransaccion"];
-            $sub_array[] = $row["idAgencia"];
             $sub_array[] = $row["idCliente"];
-            $sub_array[] = $row["fechaTransaccion"];
-            $sub_array[] = $row["montoTransaccion"];
+            $sub_array[] = $row["idTipoCliente"];
+            $sub_array[] = $row["codigoCliente"];
+            $sub_array[] = $row["numeroIdentidad"];
+            $sub_array[] = $row["nombreCliente"];
+            $sub_array[] = $row["fechaRegistro"];
+            $sub_array[] = $row["fechaModificado"];
             $sub_array[] = $row["idUsuario"];
 
             //-----XXX ESTA PARTE ES LO QUE VA EN LA TABLA------------------------------------------------------------------------------------
 
-            $sub_array[] = '<button type="button" onClick="editar(' . $row["idTransaccion"] . ');"  id="' . $row["idTransaccion"] . '" class="btn btn-inline btn-warning btn-sm ladda-button"><i class="fa fa-edit"></i></button>';
-            /* $sub_array[] = '<button type="button" onClick="eliminar(' . $row["idTransaccion"] . ');"  id="' . $row["idTransaccion"] . '" class="btn btn-inline btn-danger btn-sm ladda-button"><i class="fa fa-trash"></i></button>';
+            $sub_array[] = '<button type="button" onClick="editar(' . $row["idCliente"] . ');"  id="' . $row["idCliente"] . '" class="btn btn-inline btn-warning btn-sm ladda-button"><i class="fa fa-edit"></i></button>';
+            /* $sub_array[] = '<button type="button" onClick="eliminar(' . $row["idCliente"] . ');"  id="' . $row["idCliente"] . '" class="btn btn-inline btn-danger btn-sm ladda-button"><i class="fa fa-trash"></i></button>';
  */
             $data[] = $sub_array;
         }
@@ -95,13 +70,14 @@ switch ($_GET["op"]) {
 
     case "guardaryeditar":
 
-        if (empty($_POST["idTransaccion"])) {
+        if (empty($_POST["idCliente"])) {
             $general->insert_datos(
                 $_POST["tbl_combo_general"],
-                $_POST["tbl_combo_generaluno"],
-                $_POST["tbl_combo_general2"],
-                $_POST["montoTransaccion"],
+                $_POST["codigoCliente"],
+                $_POST["numeroIdentidad"],
+                $_POST["nombreCliente"],
                 $_POST["sidusuario"]
+
             );
         }
 
@@ -111,11 +87,11 @@ switch ($_GET["op"]) {
         else {
             $general->update_datos(
                 $_POST["tbl_combo_general"],
-                $_POST["tbl_combo_generaluno"],
-                $_POST["tbl_combo_general2"],
-                $_POST["montoTransaccion"],
+                $_POST["codigoCliente"],
+                $_POST["numeroIdentidad"],
+                $_POST["nombreCliente"],
                 $_POST["sidusuario"],
-                $_POST["idTransaccion"]
+                $_POST["idCliente"]
             );
         }
         break;
@@ -124,14 +100,14 @@ switch ($_GET["op"]) {
         //--Mostrar--------------------------------------------------------------------------------------------------------------------------------
 
     case "mostrar":
-        $datos = $general->get_lista_x_id($_POST["idTransaccion"]);
+        $datos = $general->get_lista_x_id($_POST["idCliente"]);
         if (is_array($datos) == true and count($datos) > 0) {
             foreach ($datos as $row) {
-                $output["idTransaccion"] = $row["idTransaccion"];
-                $output["idMotivoTransaccion"] = $row["idMotivoTransaccion"];
-                $output["idAgencia"] = $row["idAgencia"];
                 $output["idCliente"] = $row["idCliente"];
-                $output["montoTransaccion"] = $row["montoTransaccion"];
+                $output["idTipoCliente"] = $row["idTipoCliente"];
+                $output["codigoCliente"] = $row["codigoCliente"];
+                $output["numeroIdentidad"] = $row["numeroIdentidad"];
+                $output["nombreCliente"] = $row["nombreCliente"];
             }
 
             echo json_encode($output);
@@ -142,7 +118,7 @@ switch ($_GET["op"]) {
         //--Eliminar-------------------------------------------------------------------------------------------------------------------------------
 
         /*     case "eliminar":
-        $general->delete_elemento($_POST["idTransaccion"]);
+        $general->delete_elemento($_POST["idCliente"]);
         break;
  */
         //-----------------------------------------------------------------------------------------------------------------------------------------

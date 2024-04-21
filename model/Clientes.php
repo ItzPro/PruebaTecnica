@@ -9,30 +9,8 @@ class General extends Conectar
     public function get_combo_info()
     {
         $conectar = parent::conexion();
-        $sql = "SELECT idMotivoTransaccion
-    FROM Parametros.MotivoTransaccion;";
-
-        $sql = $conectar->prepare($sql);
-        $sql->execute();
-        return $resultado = $sql->fetchAll();
-    }
-
-    public function get_combo_infouno()
-    {
-        $conectar = parent::conexion();
-        $sql = "SELECT idAgencia
-    FROM General.Agencias;";
-
-        $sql = $conectar->prepare($sql);
-        $sql->execute();
-        return $resultado = $sql->fetchAll();
-    }
-
-    public function get_combo_info2()
-    {
-        $conectar = parent::conexion();
-        $sql = "SELECT idCliente
-    FROM General.Clientes;";
+        $sql = "SELECT idTipoCliente
+    FROM General.TipoCliente;";
 
         $sql = $conectar->prepare($sql);
         $sql->execute();
@@ -47,14 +25,15 @@ class General extends Conectar
     public function get_lista()
     {
         $conectar = parent::conexion();
-        $sql = "SELECT idTransaccion,
-        idMotivoTransaccion,
-        idAgencia,
-        idCliente,
-        fechaTransaccion,
-        montoTransaccion,
+        $sql = "SELECT idCliente,
+        idTipoCliente,
+        codigoCliente,
+        numeroIdentidad,
+        nombreCliente,
+        fechaRegistro,
+        fechaModificado,
         idUsuario
-    FROM Transaccional.Transacciones;";
+    FROM General.Clientes;";
 
         $sql = $conectar->prepare($sql);
         $sql->execute();
@@ -66,33 +45,37 @@ class General extends Conectar
 
     public function insert_datos(
         $tbl_combo_general,
-        $tbl_combo_generaluno,
-        $tbl_combo_general2,
-        $montoTransaccion,
+        $codigoCliente,
+        $numeroIdentidad,
+        $nombreCliente,
         $sidusuario
+
     ) {
         $conectar = parent::conexion();
 
-        $sql = "INSERT INTO Transaccional.Transacciones (
-            idMotivoTransaccion,
-            idAgencia,
-            idCliente,
-            fechaTransaccion,
-            montoTransaccion,
+        $sql = "INSERT INTO General.Clientes (
+            idTipoCliente,
+            codigoCliente,
+            numeroIdentidad,
+            nombreCliente,
+            fechaRegistro,
+            fechaModificado,
             idUsuario
+
         ) VALUES (
             ?,
             ?,
             ?,
-            GETDATE(),
             ?,
+            GETDATE(),
+            NULL,
             ?
         );";
         $sql = $conectar->prepare($sql);
         $sql->bindValue(1, $tbl_combo_general);
-        $sql->bindValue(2, $tbl_combo_generaluno);
-        $sql->bindValue(3, $tbl_combo_general2);
-        $sql->bindValue(4, $montoTransaccion);
+        $sql->bindValue(2, $codigoCliente);
+        $sql->bindValue(3, $numeroIdentidad);
+        $sql->bindValue(4, $nombreCliente);
         $sql->bindValue(5, $sidusuario);
         $sql->execute();
         return $resultado = $sql->fetchAll();
@@ -102,20 +85,20 @@ class General extends Conectar
     //-----------------------------------------------------------------------------------------------------------------------------------------
     //--Get X ID (para el editar)--------------------------------------------------------------------------------------------------------------
 
-    public function get_lista_x_id($idTransaccion)
+    public function get_lista_x_id($idCliente)
     {
         $conectar = parent::conexion();
-        $sql = "SELECT idTransaccion,
-        idMotivoTransaccion,
-        idAgencia,
-        idCliente,
-        montoTransaccion
-    FROM Transaccional.Transacciones
+        $sql = "SELECT idCliente,
+        idTipoCliente,
+        codigoCliente,
+        numeroIdentidad,
+        nombreCliente
+    FROM General.Clientes
     WHERE 
-    idTransaccion = ?;";
+    idCliente = ?;";
 
         $sql = $conectar->prepare($sql);
-        $sql->bindValue(1, $idTransaccion);
+        $sql->bindValue(1, $idCliente);
         $sql->execute();
         return $resultado = $sql->fetchAll();
     }
@@ -125,29 +108,30 @@ class General extends Conectar
 
     public function update_datos(
         $tbl_combo_general,
-        $tbl_combo_generaluno,
-        $tbl_combo_general2,
-        $montoTransaccion,
+        $codigoCliente,
+        $numeroIdentidad,
+        $nombreCliente,
         $sidusuario,
-        $idTransaccion
+        $idCliente
     ) {
         $conectar = parent::conexion();
 
-        $sql = "UPDATE Transaccional.Transacciones SET 
-                                                idMotivoTransaccion = ?,
-                                                idAgencia = ?,
-                                                idCliente = ?,
-                                                montoTransaccion = ?,
+        $sql = "UPDATE General.Clientes SET 
+                                                idTipoCliente = ?,
+                                                codigoCliente = ?,
+                                                numeroIdentidad = ?,
+                                                nombreCliente = ?,
+                                                fechaModificado = GETDATE(),
                                                 idUsuario = ?
 
-                                                WHERE idTransaccion = ?";
+                                                WHERE idCliente = ?";
         $sql = $conectar->prepare($sql);
         $sql->bindValue(1, $tbl_combo_general);
-        $sql->bindValue(2, $tbl_combo_generaluno);
-        $sql->bindValue(3, $tbl_combo_general2);
-        $sql->bindValue(4, $montoTransaccion);
+        $sql->bindValue(2, $codigoCliente);
+        $sql->bindValue(3, $numeroIdentidad);
+        $sql->bindValue(4, $nombreCliente);
         $sql->bindValue(5, $sidusuario);
-        $sql->bindValue(6, $idTransaccion);
+        $sql->bindValue(6, $idCliente);
         $sql->execute();
         return $resultado = $sql->fetchAll();
     }
@@ -155,13 +139,13 @@ class General extends Conectar
     //-----------------------------------------------------------------------------------------------------------------------------------------
     //--Eliminar-------------------------------------------------------------------------------------------------------------------------------
     /* 
-    public function delete_elemento($idTransaccion)
+    public function delete_elemento($idCliente)
     {
         $conectar = parent::conexion();
 
-        $sql = "UPDATE Transaccional.Transacciones SET isActivo = 0, fechaModificado = GETDATE() WHERE idTransaccion = ?";
+        $sql = "UPDATE General.Clientes SET isActivo = 0, fechaModificado = GETDATE() WHERE idCliente = ?";
         $sql = $conectar->prepare($sql);
-        $sql->bindValue(1, $idTransaccion);
+        $sql->bindValue(1, $idCliente);
         $sql->execute();
         return $resultado = $sql->fetchAll();
     } */

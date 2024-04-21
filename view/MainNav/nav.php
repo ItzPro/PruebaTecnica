@@ -51,6 +51,27 @@
             </a>
         </li>
 
+        <li class="gold">
+            <a href="../Agencias/">
+                <span class="glyphicon glyphicon-th"></span>
+                <span class="lbl">Agencias </span>
+            </a>
+        </li>
+
+        <li class="gold">
+            <a href="../Clientes/">
+                <span class="glyphicon glyphicon-th"></span>
+                <span class="lbl">Clientes </span>
+            </a>
+        </li>
+
+        <li class="gold">
+            <a href="../Transacciones/">
+                <span class="glyphicon glyphicon-th"></span>
+                <span class="lbl">Transacciones </span>
+            </a>
+        </li>
+
     </ul>
 
 

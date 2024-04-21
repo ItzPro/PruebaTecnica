@@ -30,11 +30,10 @@
 							<!---------------------------------------------------------------------------------------------------------------------------------------->
 							<!--Parte del modal----------------------------------------------------------------------------------------------------------------------->
 
-
 							<!--tbl_combo_general-->
 							<div class="form-group">
 								<fieldset class="form-group">
-									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Motivo de la transaccion
+									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Tipo De Cliente
 											<FONT COLOR="red">*</FONT>
 										</B>: </label>
 									<select class="select2 limpiarSelect" id="tbl_combo_general" name="tbl_combo_general" required>
@@ -42,47 +41,35 @@
 								</fieldset>
 							</div>
 
-							<!--tbl_combo_generaluno-->
+
+							<!--codigoCliente-->
 							<div class="form-group">
-								<fieldset class="form-group">
-									<label class="form-label " for="tbl_combo_generaluno"><i class="bi bi-person-rolodex"></i><B> Agencia
-											<FONT COLOR="red">*</FONT>
-										</B>: </label>
-									<select class="select2 limpiarSelect" id="tbl_combo_generaluno" name="tbl_combo_generaluno" required>
-									</select>
-								</fieldset>
-							</div>
-
-							<!--tbl_combo_general2-->
-							<div class="form-group2">
-								<fieldset class="form-group">
-									<label class="form-label " for="tbl_combo_general2"><i class="bi bi-person-rolodex"></i><B> Cliente
-											<FONT COLOR="red">*</FONT>
-										</B>: </label>
-									<select class="select2 limpiarSelect" id="tbl_combo_general2" name="tbl_combo_general2" required>
-									</select>
-								</fieldset>
-							</div>
-
-
-
-
-							<!--montoTransaccion-->
-							<div class="form-group">
-								<label for="montoTransaccion"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Monto de la transaccion <FONT COLOR="red">*</FONT>:</b>
+								<label for="codigoCliente"><i class="bi bi-person-rolodex"></i>
+									<b style="text-transform: capitalize;"> Codigo De Cliente <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="montoTransaccion" name="montoTransaccion" placeholder="Monto De La Transaccion">
+								<input type="text" class="form-control" id="codigoCliente" name="codigoCliente" placeholder="Codigo De Cliente">
 							</div>
 
+							<!--numeroIdentidad-->
+							<div class="form-group">
+								<label for="numeroIdentidad"><i class="bi bi-person-rolodex"></i>
+									<b style="text-transform: capitalize;"> Numero de Identidad <FONT COLOR="red">*</FONT>:</b>
+								</label>
+								<input type="text" class="form-control" id="numeroIdentidad" name="numeroIdentidad" placeholder="Numero de Identidad">
+							</div>
 
-
-
+							<!--nombreCliente-->
+							<div class="form-group">
+								<label for="nombreCliente"><i class="bi bi-person-rolodex"></i>
+									<b style="text-transform: capitalize;"> Nombre del Cliente <FONT COLOR="red">*</FONT>:</b>
+								</label>
+								<input type="text" class="form-control" id="nombreCliente" name="nombreCliente" placeholder="Nombre del Cliente">
+							</div>
 
 							<!---------------------------------------------------------------------------------------------------------------------------------------->
 							<!--Hidens-------------------------------------------------------------------------------------------------------------------------------->
 							<div class="form-group">
-								<input type="hidden" id="idTransaccion" name="idTransaccion" /> <!-- Este cambia por el id actual -->
+								<input type="hidden" id="idCliente" name="idCliente" /> <!-- Este cambia por el id actual -->
 								<input type="hidden" id="sidusuario" name="sidusuario" value="<?php echo $_SESSION["idUsuario"] ?>" /> <!-- Usuario Logueado -->
 
 							</div>

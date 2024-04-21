@@ -21,18 +21,8 @@ $(document).ready(function () {
     //---------------------------------------------------------------------------------------------------------------------------------------
     //--Combobox-----------------------------------------------------------------------------------------------------------------------------
 
-    $.post("../../controller/Transacciones.php?op=combo", function (data, status) {
+    $.post("../../controller/clientes.php?op=combo", function (data, status) {
         $('#tbl_combo_general').html(data);
-
-    });
-
-    $.post("../../controller/Transacciones.php?op=comouno", function (data, status) {
-        $('#tbl_combo_generaluno').html(data);
-
-    });
-
-    $.post("../../controller/Transacciones.php?op=combo2", function (data, status) {
-        $('#tbl_combo_general2').html(data);
 
     });
 
@@ -54,7 +44,7 @@ $(document).ready(function () {
             'pdfHtml5'
         ],
         "ajax": {
-            url: '../../controller/Transacciones.php?op=listar_General',
+            url: '../../controller/clientes.php?op=listar_General',
             type: "post",
             dataType: "json",
             data: {},
@@ -103,7 +93,7 @@ function guardaryeditar(e) {
     e.preventDefault();
     var formData = new FormData($("#nuevogeneral_form")[0]);
         $.ajax({
-            url: "../../controller/Transacciones.php?op=guardaryeditar",
+            url: "../../controller/clientes.php?op=guardaryeditar",
             type: "POST",
             data: formData,
             contentType: false,
@@ -131,16 +121,17 @@ function guardaryeditar(e) {
 //---------------------------------------------------------------------------------------------------------------------------------------
 //--Editar-------------------------------------------------------------------------------------------------------------------------------
 
-function editar(idTransaccion) {
+function editar(idCliente) {
     $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Modal Editar Usuario');
-    $.post("../../controller/Transacciones.php?op=mostrar", { idTransaccion: idTransaccion }, function (data) {
+    $.post("../../controller/clientes.php?op=mostrar", { idCliente: idCliente }, function (data) {
 
         data = JSON.parse(data);
-        $('#idTransaccion').val(data.idTransaccion);
-        $('#tbl_combo_general').val(data.idMotivoTransaccion).trigger('change');
-        $('#tbl_combo_generaluno').val(data.idAgencia).trigger('change');
-        $('#tbl_combo_general2').val(data.idCliente).trigger('change');
-        $('#montoTransaccion').val(data.montoTransaccion);
+        $('#idCliente').val(data.idCliente);
+        $('#tbl_combo_general').val(data.idTipoCliente).trigger('change');
+        $('#codigoCliente').val(data.codigoCliente);
+        $('#numeroIdentidad').val(data.numeroIdentidad);
+        $('#nombreCliente').val(data.nombreCliente);
+
         
         
 
@@ -152,7 +143,7 @@ function editar(idTransaccion) {
 //---------------------------------------------------------------------------------------------------------------------------------------
 //--Eliminar-----------------------------------------------------------------------------------------------------------------------------
 /* 
-function eliminar(idTransaccion) {
+function eliminar(idCliente) {
     swal({
         title: "Sistema Biblioteca",
         text: "Esta seguro de Eliminar el registro?",
@@ -165,7 +156,7 @@ function eliminar(idTransaccion) {
     },
         function (isConfirm) {
             if (isConfirm) {
-                $.post("../../controller/Transacciones.php?op=eliminar", { idTransaccion: idTransaccion }, function (data) {
+                $.post("../../controller/clientes.php?op=eliminar", { idCliente: idCliente }, function (data) {
                 });
 
                 $('#tbl_general').DataTable().ajax.reload();
@@ -185,7 +176,7 @@ function eliminar(idTransaccion) {
 
 $(document).on("click", "#btnnuevo", function () {
 
-    $('#idTransaccion').val('');
+    $('#idCliente').val('');
     $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar Un Nuevo Usuario');
     $('#nuevogeneral_form')[0].reset();
     limpiarCombosBoxs(".limpiarSelect");
