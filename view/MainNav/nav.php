@@ -16,6 +16,27 @@
             </a>
         </li>
 
+        <li class="gold">
+            <a href="../CanalServicio/">
+                <span class="glyphicon glyphicon-th"></span>
+                <span class="lbl">Administrar Canales De Servicio</span>
+            </a>
+        </li>
+
+        <li class="gold">
+            <a href="../TipoCliente/">
+                <span class="glyphicon glyphicon-th"></span>
+                <span class="lbl">Administrar Tipo de Cliente</span>
+            </a>
+        </li>
+
+        <li class="gold">
+            <a href="../TipoTransaccion/">
+                <span class="glyphicon glyphicon-th"></span>
+                <span class="lbl">Administrar Tipo de Transaccion</span>
+            </a>
+        </li>
+
     </ul>
 
 
