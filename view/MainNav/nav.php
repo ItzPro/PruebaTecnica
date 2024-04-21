@@ -37,6 +37,13 @@
             </a>
         </li>
 
+        <li class="gold">
+            <a href="../MotivoTransaccion/">
+                <span class="glyphicon glyphicon-th"></span>
+                <span class="lbl">Administrar Motivo de Transaccion</span>
+            </a>
+        </li>
+
     </ul>
 
 

@@ -30,36 +30,40 @@
 							<!---------------------------------------------------------------------------------------------------------------------------------------->
 							<!--Parte del modal----------------------------------------------------------------------------------------------------------------------->
 
-
-							<!--codigoTipoMovimiento-->
+							<!--tbl_combo_general-->
 							<div class="form-group">
-								<label for="codigoTipoMovimiento"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo Tipo De Movimiento <FONT COLOR="red">*</FONT>:</b>
-								</label>
-								<input type="text" class="form-control" id="codigoTipoMovimiento" name="codigoTipoMovimiento" placeholder="Codigo Tipo De Movimiento">
+								<fieldset class="form-group">
+									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Tipo De Transaccion
+											<FONT COLOR="red">*</FONT>
+										</B>: </label>
+									<select class="select2 limpiarSelect" id="tbl_combo_general" name="tbl_combo_general" required>
+									</select>
+								</fieldset>
 							</div>
 
-							<!--codigoTipoTransaccion-->
+
+							<!--codigoMotivoTransaccion-->
 							<div class="form-group">
-								<label for="codigoTipoTransaccion"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo Del Tipo De Transaccion <FONT COLOR="red">*</FONT>:</b>
+								<label for="codigoMotivoTransaccion"><i class="bi bi-person-rolodex"></i>
+									<b style="text-transform: capitalize;"> Codigo Motivo de transaccion <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="codigoTipoTransaccion" name="codigoTipoTransaccion" placeholder="Codigo Del Tipo De Transaccion">
+								<input type="text" class="form-control" id="codigoMotivoTransaccion" name="codigoMotivoTransaccion" placeholder="Codigo Motivo de transaccion">
 							</div>
 
-							<!--nombreTipoTransaccion-->
+							<!--nombreMotivoTransaccion-->
 							<div class="form-group">
-								<label for="nombreTipoTransaccion"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Nombre del Tipo de Transaccion <FONT COLOR="red">*</FONT>:</b>
+								<label for="nombreMotivoTransaccion"><i class="bi bi-person-rolodex"></i>
+									<b style="text-transform: capitalize;"> Nombre Motivo De Transaccion <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="nombreTipoTransaccion" name="nombreTipoTransaccion" placeholder="Nombre del Tipo de Transaccion">
+								<input type="text" class="form-control" id="nombreMotivoTransaccion" name="nombreMotivoTransaccion" placeholder="Nombre Motivo De Transaccion">
 							</div>
+
 
 
 							<!---------------------------------------------------------------------------------------------------------------------------------------->
 							<!--Hidens-------------------------------------------------------------------------------------------------------------------------------->
 							<div class="form-group">
-								<input type="hidden" id="idTipoTransaccion" name="idTipoTransaccion" /> <!-- Este cambia por el id actual -->
+								<input type="hidden" id="idMotivoTransaccion" name="idMotivoTransaccion" /> <!-- Este cambia por el id actual -->
 								<input type="hidden" id="sidusuario" name="sidusuario" value="<?php echo $_SESSION["idUsuario"] ?>" /> <!-- Usuario Logueado -->
 
 							</div>
