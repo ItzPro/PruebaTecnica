@@ -44,6 +44,13 @@
             </a>
         </li>
 
+        <li class="gold">
+            <a href="../Agencias/">
+                <span class="glyphicon glyphicon-th"></span>
+                <span class="lbl">Administrar Agencias </span>
+            </a>
+        </li>
+
     </ul>
 
 
