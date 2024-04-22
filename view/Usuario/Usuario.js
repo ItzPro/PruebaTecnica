@@ -130,12 +130,12 @@ function editar(idUsuario) {
 
 function eliminar(idUsuario) {
     swal({
-        title: "Sistema Biblioteca",
-        text: "Esta seguro de Eliminar el registro?",
+        title: "Prueba Técnica",
+        text: "¿Está seguro de eliminar el registro?",
         type: "error",
         showCancelButton: true,
         confirmButtonClass: "btn-danger",
-        confirmButtonText: "Si",
+        confirmButtonText: "Sí",
         cancelButtonText: "No",
         closeOnConfirm: false
     },

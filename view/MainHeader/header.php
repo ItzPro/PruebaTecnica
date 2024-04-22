@@ -35,10 +35,10 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dd-user-menu">
                             <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-user"></span>Perfil</a>
-                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Configuracion</a>
+                            <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-cog"></span>Configuración</a>
                             <a class="dropdown-item" href="#"><span class="font-icon glyphicon glyphicon-question-sign"></span>Ayuda</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../Logout/logout.php"><span class="font-icon glyphicon glyphicon-log-out"></span>Cerrar Sesion</a>
+                            <a class="dropdown-item" href="../Logout/logout.php"><span class="font-icon glyphicon glyphicon-log-out"></span>Cerrar sesión</a>
                         </div>
                     </div>
                     <!-- --------------------------------------------------------- -->
@@ -61,7 +61,7 @@
                         <div class="dropdown dropdown-typical">
                             <!-- Izquierda -------------------------------------------------- -->
 
-                            <h1>Prueba Técnica - Gabriel Alejandro Cruz Pineda - 21/04/2024 </h1>
+                            <h3>Prueba Técnica - Gabriel Alejandro Cruz Pineda - 21/04/2024 </h3>
 
                             <!-- Izquierda -------------------------------------------------- -->
                         </div><!--.site-header-collapsed-in-->

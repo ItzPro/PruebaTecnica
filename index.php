@@ -44,7 +44,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                                         <span aria-hidden="true">×</span>
                                     </button>
                                     <i class="font-icon font-icon-warning"></i>
-                                    El Usuario y/o Contraseña son incorrectos.
+                                    El usuario y/o contraseña son incorrectos
                                 </div>
                             <?php
                                 break;
@@ -56,7 +56,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                                         <span aria-hidden="true">×</span>
                                     </button>
                                     <i class="font-icon font-icon-warning"></i>
-                                    Los campos estan vacios.
+                                    Los campos estan vacíos
                                 </div>
                     <?php
                                 break;
