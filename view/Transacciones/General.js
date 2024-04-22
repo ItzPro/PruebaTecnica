@@ -132,7 +132,7 @@ function guardaryeditar(e) {
 //--Editar-------------------------------------------------------------------------------------------------------------------------------
 
 function editar(idTransaccion) {
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Modal Editar Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Editar transacción');
     $.post("../../controller/Transacciones.php?op=mostrar", { idTransaccion: idTransaccion }, function (data) {
 
         data = JSON.parse(data);
@@ -186,7 +186,7 @@ function eliminar(idTransaccion) {
 $(document).on("click", "#btnnuevo", function () {
 
     $('#idTransaccion').val('');
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar Un Nuevo Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar transacción');
     $('#nuevogeneral_form')[0].reset();
     limpiarCombosBoxs(".limpiarSelect");
     $('#modalGeneral').modal('show');

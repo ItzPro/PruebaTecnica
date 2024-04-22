@@ -23,19 +23,20 @@ if (isset($_SESSION["idUsuario"])) {
                     <div class="tbl">
                         <div class="tbl-row">
                             <div class="tbl-cell">
-                                <h3>Reporte de transacciones</h3>
+                                <h3>Reporte de transacciones mensuales</h3>
                                 <ol class="breadcrumb breadcrumb-simple">
                                     <li><a href="../Home/">Home</a></li>
-                                    <li class="active">Reporte de transacciones</li>
+                                    <li class="active">Reporte de transacciones mensuales</li>
                                 </ol>
                             </div>
                         </div>
                     </div>
                 </header>
 
+
                 <div class="box-typical box-typical-padding">
                     <!-- <button type="button" id="btnnuevo" class="btn btn-inline btn-primary">Nuevo Registro</button> -->
-                    <table id="tbl_generalcompleta" name="tbl_generalcompleta" class="display nowrap table table-striped table-bordered" style="width:100%">
+                    <table id="tbl_generalmes" name="tbl_generalmes" class="display nowrap table table-striped table-bordered" style="width:100%">
                         <!---------------------------------------------------------------------------------------------------------------------------------------->
                         <thead class="text-center">
                             <!---------------------------------------------------------------------------------------------------------------------------------------->
@@ -79,8 +80,6 @@ if (isset($_SESSION["idUsuario"])) {
                         </tbody>
                     </table>
                 </div>
-
-
 
 
 

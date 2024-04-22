@@ -108,7 +108,7 @@ function guardaryeditar(e) {
 //--Editar-------------------------------------------------------------------------------------------------------------------------------
 
 function editar(idTipoCliente) {
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Modal Editar Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Editar tipo de cliente');
     $.post("../../controller/tipocliente.php?op=mostrar", { idTipoCliente: idTipoCliente }, function (data) {
 
         data = JSON.parse(data);
@@ -160,7 +160,7 @@ function eliminar(idTipoCliente) {
 $(document).on("click", "#btnnuevo", function () {
 
     $('#idTipoCliente').val('');
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar Un Nuevo Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar tipo de cliente');
     $('#nuevogeneral_form')[0].reset();
     /* limpiarCombosBoxs(".limpiarSelect"); */
     $('#modalGeneral').modal('show');

@@ -122,7 +122,7 @@ function guardaryeditar(e) {
 //--Editar-------------------------------------------------------------------------------------------------------------------------------
 
 function editar(idMotivoTransaccion) {
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Modal Editar Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Editar motivo de transacción');
     $.post("../../controller/motivotransaccion.php?op=mostrar", { idMotivoTransaccion: idMotivoTransaccion }, function (data) {
 
         data = JSON.parse(data);
@@ -175,7 +175,7 @@ function eliminar(idMotivoTransaccion) {
 $(document).on("click", "#btnnuevo", function () {
 
     $('#idMotivoTransaccion').val('');
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar Un Nuevo Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar un nuevo motivo de transacción');
     $('#nuevogeneral_form')[0].reset();
     limpiarCombosBoxs(".limpiarSelect");
     $('#modalGeneral').modal('show');

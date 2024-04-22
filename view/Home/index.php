@@ -28,7 +28,7 @@ if (isset($_SESSION["idUsuario"])) {
                 <div class="box-typical box-typical-padding">
 
                     <h1>Bienvenido</h1>
-
+                    <h3>Por favor utilice los botones del menú lateral para acceder a las diferentes opciones del sistema.</h3>
                 </div>
 
             </div>

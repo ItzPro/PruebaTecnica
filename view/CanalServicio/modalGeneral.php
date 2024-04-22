@@ -12,7 +12,7 @@
 
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
-				<p style="text-transform: capitalize;"> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
+				<p> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
 						<FONT COLOR="red">*</FONT>
 					</B>) son campos obligatorios que deben ser llenados. </p>
 			</div>
@@ -33,17 +33,17 @@
 							<!--codigoCanalServicio-->
 							<div class="form-group">
 								<label for="codigoCanalServicio"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo Del Canal <FONT COLOR="red">*</FONT>:</b>
+									<b> Código <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="codigoCanalServicio" name="codigoCanalServicio" placeholder="Codigo Del Canal">
+								<input type="text" class="form-control" id="codigoCanalServicio" name="codigoCanalServicio" placeholder="Código del canal">
 							</div>
 
 							<!--nombreCanalServicio-->
 							<div class="form-group">
 								<label for="nombreCanalServicio"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Nombre del Canal <FONT COLOR="red">*</FONT>:</b>
+									<b> Nombre <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="nombreCanalServicio" name="nombreCanalServicio" placeholder="Nombre del Canal">
+								<input type="text" class="form-control" id="nombreCanalServicio" name="nombreCanalServicio" placeholder="Nombre del canal">
 							</div>
 
 

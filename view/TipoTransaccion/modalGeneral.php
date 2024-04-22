@@ -12,7 +12,7 @@
 
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
-				<p style="text-transform: capitalize;"> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
+				<p> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
 						<FONT COLOR="red">*</FONT>
 					</B>) son campos obligatorios que deben ser llenados. </p>
 			</div>
@@ -34,25 +34,25 @@
 							<!--codigoTipoMovimiento-->
 							<div class="form-group">
 								<label for="codigoTipoMovimiento"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo Tipo De Movimiento <FONT COLOR="red">*</FONT>:</b>
+									<b> Código tipo de movimiento <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="codigoTipoMovimiento" name="codigoTipoMovimiento" placeholder="Codigo Tipo De Movimiento">
+								<input type="text" class="form-control" id="codigoTipoMovimiento" name="codigoTipoMovimiento" placeholder="Código tipo de movimiento">
 							</div>
 
 							<!--codigoTipoTransaccion-->
 							<div class="form-group">
 								<label for="codigoTipoTransaccion"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo Del Tipo De Transaccion <FONT COLOR="red">*</FONT>:</b>
+									<b> Código del tipo de transacción <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="codigoTipoTransaccion" name="codigoTipoTransaccion" placeholder="Codigo Del Tipo De Transaccion">
+								<input type="text" class="form-control" id="codigoTipoTransaccion" name="codigoTipoTransaccion" placeholder="Código del tipo de transacción">
 							</div>
 
 							<!--nombreTipoTransaccion-->
 							<div class="form-group">
 								<label for="nombreTipoTransaccion"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Nombre del Tipo de Transaccion <FONT COLOR="red">*</FONT>:</b>
+									<b> Nombre del tipo de transacción <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="nombreTipoTransaccion" name="nombreTipoTransaccion" placeholder="Nombre del Tipo de Transaccion">
+								<input type="text" class="form-control" id="nombreTipoTransaccion" name="nombreTipoTransaccion" placeholder="Nombre del tipo de transacción">
 							</div>
 
 

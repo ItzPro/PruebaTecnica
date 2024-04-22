@@ -108,7 +108,7 @@ function guardaryeditar(e) {
 //--Editar-------------------------------------------------------------------------------------------------------------------------------
 
 function editar(idUsuario) {
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Modal Editar Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Editar usuario');
     $.post("../../controller/Usuario.php?op=mostrar", { idUsuario: idUsuario }, function (data) {
 
         data = JSON.parse(data);
@@ -162,7 +162,7 @@ function eliminar(idUsuario) {
 $(document).on("click", "#btnnuevo", function () {
 
     $('#idUsuario').val('');
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar Un Nuevo Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar un nuevo usuario');
     $('#nuevoUsuario_form')[0].reset();
     /* limpiarCombosBoxs(".limpiarSelect"); */
     $('#modalUsuario').modal('show');

@@ -12,7 +12,7 @@
 
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
-				<p style="text-transform: capitalize;"> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
+				<p> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
 						<FONT COLOR="red">*</FONT>
 					</B>) son campos obligatorios que deben ser llenados. </p>
 			</div>
@@ -33,25 +33,25 @@
 							<!--codigoUsuario-->
 							<div class="form-group">
 								<label for="codigoUsuario"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo Del Usuario <FONT COLOR="red">*</FONT>:</b>
+									<b style="text-transform: capitalize;"> Código <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="codigoUsuario" name="codigoUsuario" placeholder="Codigo Del Usuario">
+								<input type="text" class="form-control" id="codigoUsuario" name="codigoUsuario" placeholder="Código de usuario">
 							</div>
 
 							<!--nombreUsuario-->
 							<div class="form-group">
 								<label for="nombreUsuario"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Nombre del Usuario <FONT COLOR="red">*</FONT>:</b>
+									<b style="text-transform: capitalize;"> Nombre <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre del Usuario">
+								<input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario">
 							</div>
 
 							<!--passwordUsuario-->
 							<div class="form-group">
 								<label for="passwordUsuario"><i class="bi bi-input-cursor-text"></i>
-									<b style="text-transform: capitalize;"> Contraseña Del Usuario <FONT COLOR="red">*</FONT>:</b>
+									<b style="text-transform: capitalize;"> Contraseña <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="passwordUsuario" name="passwordUsuario" placeholder="Contraseña Del Usuario">
+								<input type="text" class="form-control" id="passwordUsuario" name="passwordUsuario" placeholder="Contraseña del usuario">
 							</div>
 
 							<!--isActivo-->
@@ -59,7 +59,7 @@
 								<label for="isActivo"><i class="bi bi-person-rolodex"></i>
 									<b style="text-transform: capitalize;"> Estado <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="isActivo" name="isActivo" placeholder="Estado">
+								<input type="text" class="form-control" id="isActivo" name="isActivo" placeholder="Estado del usuario">
 							</div>
 
 
@@ -77,7 +77,7 @@
 								<button type="button" class="btn  btn-secondary" data-dismiss="modal"><i class="bi bi-x-circle"></i> Cerrar</button>
 								<input type="hidden" name="operacion" id="operacion">
 								<button type="submit" name="action" id="#" value="add" class="btn btn-primary"><i class="bi bi-file-earmark-plus-fill"></i> Guardar </button>
-								
+
 								<input type="hidden" id="idusuario" name="idusuario" value="<?php echo $_SESSION["idUsuario"] ?>" />
 							</div>
 

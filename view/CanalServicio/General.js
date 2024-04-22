@@ -108,7 +108,7 @@ function guardaryeditar(e) {
 //--Editar-------------------------------------------------------------------------------------------------------------------------------
 
 function editar(idCanalServicio) {
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Modal Editar Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Editar canal de registro');
     $.post("../../controller/canalservicio.php?op=mostrar", { idCanalServicio: idCanalServicio }, function (data) {
 
         data = JSON.parse(data);
@@ -160,7 +160,7 @@ function eliminar(idCanalServicio) {
 $(document).on("click", "#btnnuevo", function () {
 
     $('#idCanalServicio').val('');
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar Un Nuevo Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar un nuevo canal de servicio');
     $('#nuevogeneral_form')[0].reset();
     /* limpiarCombosBoxs(".limpiarSelect"); */
     $('#modalGeneral').modal('show');

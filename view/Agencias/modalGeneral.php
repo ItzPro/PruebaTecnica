@@ -12,7 +12,7 @@
 
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
-				<p style="text-transform: capitalize;"> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
+				<p> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
 						<FONT COLOR="red">*</FONT>
 					</B>) son campos obligatorios que deben ser llenados. </p>
 			</div>
@@ -33,7 +33,7 @@
 							<!--tbl_combo_general-->
 							<div class="form-group">
 								<fieldset class="form-group">
-									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Canal Servicio
+									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Canal servicio
 											<FONT COLOR="red">*</FONT>
 										</B>: </label>
 									<select class="select2 limpiarSelect" id="tbl_combo_general" name="tbl_combo_general" required>
@@ -45,33 +45,33 @@
 							<!--codigoAgencia-->
 							<div class="form-group">
 								<label for="codigoAgencia"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo De Agencia <FONT COLOR="red">*</FONT>:</b>
+									<b style="text-transform: capitalize;"> Código <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="codigoAgencia" name="codigoAgencia" placeholder="Codigo De Agencia">
+								<input type="text" class="form-control" id="codigoAgencia" name="codigoAgencia" placeholder="Código de agencia">
 							</div>
 
 							<!--nombreAgencia-->
 							<div class="form-group">
 								<label for="nombreAgencia"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Nombre De Agencia <FONT COLOR="red">*</FONT>:</b>
+									<b style="text-transform: capitalize;"> Nombre <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="nombreAgencia" name="nombreAgencia" placeholder="Nombre De Agencia">
+								<input type="text" class="form-control" id="nombreAgencia" name="nombreAgencia" placeholder="Nombre de agencia">
 							</div>
 
 							<!--direccionAgencia-->
 							<div class="form-group">
 								<label for="direccionAgencia"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Direccion De Agencia <FONT COLOR="red">*</FONT>:</b>
+									<b style="text-transform: capitalize;"> Dirección <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="direccionAgencia" name="direccionAgencia" placeholder="Direccion De Agencia">
+								<input type="text" class="form-control" id="direccionAgencia" name="direccionAgencia" placeholder="Dirección de agencia">
 							</div>
 
 							<!--telefonoAgencia-->
 							<div class="form-group">
 								<label for="telefonoAgencia"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Telefono De Agencia <FONT COLOR="red">*</FONT>:</b>
+									<b style="text-transform: capitalize;"> Teléfono <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="telefonoAgencia" name="telefonoAgencia" placeholder="Telefono De Agencia">
+								<input type="text" class="form-control" id="telefonoAgencia" name="telefonoAgencia" placeholder="Teléfono de agencia">
 							</div>
 
 

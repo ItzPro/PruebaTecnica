@@ -122,7 +122,7 @@ function guardaryeditar(e) {
 //--Editar-------------------------------------------------------------------------------------------------------------------------------
 
 function editar(idAgencia) {
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Modal Editar Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Editar agencia');
     $.post("../../controller/agencias.php?op=mostrar", { idAgencia: idAgencia }, function (data) {
 
         data = JSON.parse(data);
@@ -178,7 +178,7 @@ function eliminar(idAgencia) {
 $(document).on("click", "#btnnuevo", function () {
 
     $('#idAgencia').val('');
-    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar Un Nuevo Usuario');
+    $('#mdltitulo').html('<i class="bi bi-file-earmark-post-fill"></i> Agregar una nueva agencia');
     $('#nuevogeneral_form')[0].reset();
     limpiarCombosBoxs(".limpiarSelect");
     $('#modalGeneral').modal('show');

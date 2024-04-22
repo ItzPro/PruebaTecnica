@@ -12,7 +12,7 @@
 
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
-				<p style="text-transform: capitalize;"> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
+				<p> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
 						<FONT COLOR="red">*</FONT>
 					</B>) son campos obligatorios que deben ser llenados. </p>
 			</div>
@@ -34,7 +34,7 @@
 							<!--tbl_combo_general-->
 							<div class="form-group">
 								<fieldset class="form-group">
-									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Motivo de la transaccion
+									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Motivo de la transacción
 											<FONT COLOR="red">*</FONT>
 										</B>: </label>
 									<select class="select2 limpiarSelect" id="tbl_combo_general" name="tbl_combo_general" required>
@@ -70,9 +70,9 @@
 							<!--montoTransaccion-->
 							<div class="form-group">
 								<label for="montoTransaccion"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Monto de la transaccion <FONT COLOR="red">*</FONT>:</b>
+									<b> Monto de la transacción <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="montoTransaccion" name="montoTransaccion" placeholder="Monto De La Transaccion">
+								<input type="text" class="form-control" id="montoTransaccion" name="montoTransaccion" placeholder="Monto de la transacción">
 							</div>
 
 

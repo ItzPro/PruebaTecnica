@@ -34,39 +34,39 @@ if (isset($_SESSION["idUsuario"])) {
                 </header>
 
                 <div class="box-typical box-typical-padding">
-                    <button type="button" id="btnnuevo" class="btn btn-inline btn-primary">Nuevo Registro</button>
+                    <button type="button" id="btnnuevo" class="btn btn-inline btn-primary">Nuevo registro</button>
                     <table id="tbl_usuario" name="tbl_usuario" class="display nowrap table table-striped table-bordered" style="width:100%">
                         <!---------------------------------------------------------------------------------------------------------------------------------------->
                         <thead class="text-center">
                             <!---------------------------------------------------------------------------------------------------------------------------------------->
                             <!---------------------------------------------------------------------------------------------------------------------------------------->
                             <tr>
-                                <th style="text-transform: capitalize;">#</th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> Codigo Del Usuario </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> Nombre Del Usuario </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Contraseña </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Estado </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Ultima Conexion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Registro </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Modificacion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Usuario Que Lo Registro </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-pencil-fill"></i> Editar</th>
-                                <th style="text-transform: capitalize;"><i class="fa fa-trash"></i> Eliminar</th>
+                                <th ">#</th>
+                                <th "><i class="bi bi-person-rolodex"></i> Código </th>
+                                <th "><i class=" bi bi-person-rolodex"></i> Nombre </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Contraseña </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Estado </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Última conexión </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Fecha de registro </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Fecha de modificación </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Usuario que lo registró </th>
+                                <th "><i class=" bi bi-pencil-fill"></i> Editar</th>
+                                <th "><i class=" fa fa-trash"></i> Eliminar</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
-                                <th style="text-transform: capitalize;">#</th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> Codigo Del Usuario </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> Nombre Del Usuario </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Contraseña </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Estado </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Ultima Conexion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Registro </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Modificacion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Usuario Que Lo Registro </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-pencil-fill"></i> Editar</th>
-                                <th style="text-transform: capitalize;"><i class="fa fa-trash"></i> Eliminar</th>
+                                <th ">#</th>
+                                <th "><i class="bi bi-person-rolodex"></i> Código </th>
+                                <th "><i class=" bi bi-person-rolodex"></i> Nombre </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Contraseña </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Estado </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Última conexión </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Fecha de registro </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Fecha de modificación </th>
+                                <th "><i class=" bi bi-input-cursor-text"></i> Usuario que lo registró </th>
+                                <th "><i class=" bi bi-pencil-fill"></i> Editar</th>
+                                <th "><i class=" fa fa-trash"></i> Eliminar</th>
                             </tr>
                             <!---------------------------------------------------------------------------------------------------------------------------------------->
                             <!---------------------------------------------------------------------------------------------------------------------------------------->

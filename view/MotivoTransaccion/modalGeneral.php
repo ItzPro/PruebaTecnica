@@ -12,7 +12,7 @@
 
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
-				<p style="text-transform: capitalize;"> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
+				<p> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
 						<FONT COLOR="red">*</FONT>
 					</B>) son campos obligatorios que deben ser llenados. </p>
 			</div>
@@ -33,7 +33,7 @@
 							<!--tbl_combo_general-->
 							<div class="form-group">
 								<fieldset class="form-group">
-									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Tipo De Transaccion
+									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Tipo de transacción
 											<FONT COLOR="red">*</FONT>
 										</B>: </label>
 									<select class="select2 limpiarSelect" id="tbl_combo_general" name="tbl_combo_general" required>
@@ -45,17 +45,17 @@
 							<!--codigoMotivoTransaccion-->
 							<div class="form-group">
 								<label for="codigoMotivoTransaccion"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo Motivo de transaccion <FONT COLOR="red">*</FONT>:</b>
+									<b> Código motivo de transacción <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="codigoMotivoTransaccion" name="codigoMotivoTransaccion" placeholder="Codigo Motivo de transaccion">
+								<input type="text" class="form-control" id="codigoMotivoTransaccion" name="codigoMotivoTransaccion" placeholder="Código motivo de transacción">
 							</div>
 
 							<!--nombreMotivoTransaccion-->
 							<div class="form-group">
 								<label for="nombreMotivoTransaccion"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Nombre Motivo De Transaccion <FONT COLOR="red">*</FONT>:</b>
+									<b>Nombre motivo de transacción <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="nombreMotivoTransaccion" name="nombreMotivoTransaccion" placeholder="Nombre Motivo De Transaccion">
+								<input type="text" class="form-control" id="nombreMotivoTransaccion" name="nombreMotivoTransaccion" placeholder="Nombre motivo de transacción">
 							</div>
 
 

@@ -12,7 +12,7 @@
 
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
-				<p style="text-transform: capitalize;"> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
+				<p> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
 						<FONT COLOR="red">*</FONT>
 					</B>) son campos obligatorios que deben ser llenados. </p>
 			</div>
@@ -33,7 +33,7 @@
 							<!--tbl_combo_general-->
 							<div class="form-group">
 								<fieldset class="form-group">
-									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Tipo De Cliente
+									<label class="form-label " for="tbl_combo_general"><i class="bi bi-person-rolodex"></i><B>Tipo de cliente
 											<FONT COLOR="red">*</FONT>
 										</B>: </label>
 									<select class="select2 limpiarSelect" id="tbl_combo_general" name="tbl_combo_general" required>
@@ -45,25 +45,25 @@
 							<!--codigoCliente-->
 							<div class="form-group">
 								<label for="codigoCliente"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo De Cliente <FONT COLOR="red">*</FONT>:</b>
+									<b> Código <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="codigoCliente" name="codigoCliente" placeholder="Codigo De Cliente">
+								<input type="text" class="form-control" id="codigoCliente" name="codigoCliente" placeholder="Código de cliente">
 							</div>
 
 							<!--numeroIdentidad-->
 							<div class="form-group">
 								<label for="numeroIdentidad"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Numero de Identidad <FONT COLOR="red">*</FONT>:</b>
+									<b> Número <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="numeroIdentidad" name="numeroIdentidad" placeholder="Numero de Identidad">
+								<input type="text" class="form-control" id="numeroIdentidad" name="numeroIdentidad" placeholder="Número de identidad">
 							</div>
 
 							<!--nombreCliente-->
 							<div class="form-group">
 								<label for="nombreCliente"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Nombre del Cliente <FONT COLOR="red">*</FONT>:</b>
+									<b> Nombre <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="nombreCliente" name="nombreCliente" placeholder="Nombre del Cliente">
+								<input type="text" class="form-control" id="nombreCliente" name="nombreCliente" placeholder="Nombre del cliente">
 							</div>
 
 							<!---------------------------------------------------------------------------------------------------------------------------------------->

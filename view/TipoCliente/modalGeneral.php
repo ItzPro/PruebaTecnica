@@ -12,7 +12,7 @@
 
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
 				<!---------------------------------------------------------------------------------------------------------------------------------------->
-				<p style="text-transform: capitalize;"> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
+				<p> <strong>Nota: </strong> Los campos que tengan el asterico color rojo(<B>
 						<FONT COLOR="red">*</FONT>
 					</B>) son campos obligatorios que deben ser llenados. </p>
 			</div>
@@ -33,17 +33,17 @@
 							<!--codigoTipoCliente-->
 							<div class="form-group">
 								<label for="codigoTipoCliente"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Codigo Del Tipo Client <FONT COLOR="red">*</FONT>:</b>
+									<b> Código <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="codigoTipoCliente" name="codigoTipoCliente" placeholder="Codigo Del Tipo Cliente">
+								<input type="text" class="form-control" id="codigoTipoCliente" name="codigoTipoCliente" placeholder="Código del tipo cliente">
 							</div>
 
 							<!--nombreTipoCliente-->
 							<div class="form-group">
 								<label for="nombreTipoCliente"><i class="bi bi-person-rolodex"></i>
-									<b style="text-transform: capitalize;"> Nombre del Tipo de Cliente <FONT COLOR="red">*</FONT>:</b>
+									<b> Nombre <FONT COLOR="red">*</FONT>:</b>
 								</label>
-								<input type="text" class="form-control" id="nombreTipoCliente" name="nombreTipoCliente" placeholder="Nombre del Tipo de Cliente">
+								<input type="text" class="form-control" id="nombreTipoCliente" name="nombreTipoCliente" placeholder="Nombre del tipo de cliente">
 							</div>
 
 

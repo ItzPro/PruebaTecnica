@@ -23,10 +23,10 @@ if (isset($_SESSION["idUsuario"])) {
                     <div class="tbl">
                         <div class="tbl-row">
                             <div class="tbl-cell">
-                                <h3>Mantenimiento Agencias</h3>
+                                <h3>Mantenimiento agencias</h3>
                                 <ol class="breadcrumb breadcrumb-simple">
                                     <li><a href="../Home/">Home</a></li>
-                                    <li class="active">Mantenimiento Agencias</li>
+                                    <li class="active">Mantenimiento agencias</li>
                                 </ol>
                             </div>
                         </div>
@@ -34,37 +34,37 @@ if (isset($_SESSION["idUsuario"])) {
                 </header>
 
                 <div class="box-typical box-typical-padding">
-                    <button type="button" id="btnnuevo" class="btn btn-inline btn-primary">Nuevo Registro</button>
+                    <button type="button" id="btnnuevo" class="btn btn-inline btn-primary">Nuevo registro</button>
                     <table id="tbl_general" name="tbl_general" class="display nowrap table table-striped table-bordered" style="width:100%">
                         <!---------------------------------------------------------------------------------------------------------------------------------------->
                         <thead class="text-center">
                             <!---------------------------------------------------------------------------------------------------------------------------------------->
                             <!---------------------------------------------------------------------------------------------------------------------------------------->
                             <tr>
-                                <th style="text-transform: capitalize;">#</th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> ID Canal Servicio </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> Codigo de Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Nombre De Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Direccion De Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Telefono De Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Registro </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Modificacion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Usuario Que Lo Registro </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-pencil-fill"></i> Editar</th>
+                                <th>#</th>
+                                <th><i class="bi bi-person-rolodex"></i> ID canal servicio </th>
+                                <th><i class="bi bi-person-rolodex"></i> Código de agencia </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Agencia </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Dirección de agencia </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Teléfono de agencia </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Fecha de registro </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Fecha de modificación </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Usuario que lo registró </th>
+                                <th><i class="bi bi-pencil-fill"></i> Editar</th>
                             </tr>
                         </thead>
                         <tfoot>
                             <tr>
-                                <th style="text-transform: capitalize;">#</th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> ID Canal Servicio </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-person-rolodex"></i> Codigo de Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Nombre De Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Direccion De Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Telefono De Agencia </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Registro </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Fecha De Modificacion </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-input-cursor-text"></i> Usuario Que Lo Registro </th>
-                                <th style="text-transform: capitalize;"><i class="bi bi-pencil-fill"></i> Editar</th>
+                                <th>#</th>
+                                <th><i class="bi bi-person-rolodex"></i> ID canal servicio </th>
+                                <th><i class="bi bi-person-rolodex"></i> Código de agencia </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Agencia </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Dirección de agencia </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Teléfono de agencia </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Fecha de registro </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Fecha de modificación </th>
+                                <th><i class="bi bi-input-cursor-text"></i> Usuario que lo registró </th>
+                                <th><i class="bi bi-pencil-fill"></i> Editar</th>
                             </tr>
                             <!---------------------------------------------------------------------------------------------------------------------------------------->
                             <!---------------------------------------------------------------------------------------------------------------------------------------->
