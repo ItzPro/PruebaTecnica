@@ -72,6 +72,13 @@
             </a>
         </li>
 
+        <li class="gold">
+            <a href="../ReporteTransacciones/">
+                <span class="glyphicon glyphicon-th"></span>
+                <span class="lbl">Reporte De Transacciones </span>
+            </a>
+        </li>
+
     </ul>
 
 
