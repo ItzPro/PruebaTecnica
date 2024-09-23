@@ -7,7 +7,7 @@ if (isset($_SESSION["idUsuario"])) {
 
     <head lang="en">
         <?php require_once("../MainHead/head.php"); ?>
-        <title>Programacion Quirurgica :: Inicio</title>
+        <title>Sistema de registro PHP :: Inicio</title>
     </head>
 
     <body class="with-side-menu">

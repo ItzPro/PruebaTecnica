@@ -14,7 +14,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Prueba Practica :: Login</title>
+    <title>Sistema de registro PHP :: Login</title>
 
     <link rel="stylesheet" href="public/css/separate/pages/login.min.css">
     <link rel="stylesheet" href="public/css/lib/font-awesome/font-awesome.min.css">

@@ -61,7 +61,7 @@
                         <div class="dropdown dropdown-typical">
                             <!-- Izquierda -------------------------------------------------- -->
 
-                            <h3>Prueba Técnica - Gabriel Alejandro Cruz Pineda - 21/04/2024 </h3>
+                            <h3>Gabriel Alejandro Cruz Pineda - 21/04/2024 </h3>
 
                             <!-- Izquierda -------------------------------------------------- -->
                         </div><!--.site-header-collapsed-in-->
